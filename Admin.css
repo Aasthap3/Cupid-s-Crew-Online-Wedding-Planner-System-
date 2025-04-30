@@ -1,0 +1,235 @@
+@font-face {
+    font-family: "Halinum";
+    src: url("Halimun.ttf");
+}
+
+@font-face {
+    font-family: "DomaineSansTextFine-Regular";
+    src: url(TestDomaineSansFine-Regular.otf);
+}
+
+body {
+    background-color: #d8d5d2 ;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+/*Navbar*/
+.topnav {
+    position: relative;
+    
+    overflow: hidden;
+    width: 100%;
+}
+
+.topnav img{
+    margin-top: 12px;
+    margin-left: 12px;
+    float: left;
+}
+
+.topnav menu {
+    float: right;
+}
+
+.menu a{
+    font-family: "Halinum";
+    float: right;
+    padding: 32px 30px;
+    display: block;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    text-align: center;
+}
+
+.topnav a:hover {
+    color: black;
+}
+
+.topnav .icon {
+    display: none;
+}
+
+h1{
+    text-align: center;
+}
+
+
+@media screen and (max-width: 820px) {
+    .topnav a:not(:first-child) {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: right;
+        display: block;
+    }
+}
+
+@media screen and (max-width: 820px) {
+    .topnav.responsive {
+        position: absolute;
+        z-index: 3;
+    }
+
+    .topnav.responsive .icon {
+        position: relative;
+        right: 0;
+        top: 0;
+    }
+
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: right;
+    }
+
+    .topnav.responsive a:hover{
+        background-color: grey;opacity: 0.6;
+        color: white;
+    }
+
+    .topnav img{
+        position: relative;
+    }
+}
+
+*{box-sizing: border-box;}
+
+
+
+
+.t, tr, td{
+    border:2px solid black;
+    border-collapse: collapse;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+.t{
+    margin-left: auto;
+    margin-right: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+
+
+@media only screen and (max-width: 700px) and (min-width:400px) {
+    .t{
+        margin-bottom: 12px;
+        width: 100px;
+        justify-content: space-between;
+    }
+
+}
+
+footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #7C8981;
+    height: auto;
+    width: 100%;
+    padding-top: 40px;
+    margin-top: 50px;
+    color: white;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content p{
+    max-width: 500px;
+    margin: 20px auto;
+    line-height: 28px;
+    font-size: 16px;
+    color: white;
+
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 1rem 0;
+}
+.socials li{
+    margin: 0 10px;
+}
+.socials a{
+    text-decoration: none;
+    color: #fff;
+    border: 1.1px solid white;
+    padding: 5px;
+    border-radius: 50%;
+}
+.socials a i{
+    font-size: 1.1rem;
+    width: 20px;
+    transition: color .4s ease;
+}
+.socials a:hover i{
+    color: #d8d5d2;
+}
+
+.footer-menu ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer-menu ul li {
+    padding-right: 10px;
+    display: block;
+}
+
+.footer-menu ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.footer-menu ul li a:hover {
+    color: #d8d5d2;
+}
+
+@media (max-width:500px) {
+    .footer-menu ul {
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+}
+
+.footer-bottom{
+    background: #7C8981;
+    width: 100%;
+    padding: 20px;
+    padding-bottom: 40px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    float: left;
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+}
+
+.footer-bottom p a {
+    color: #44bae8;
+    font-size: 16px;
+    text-decoration: none;
+}
